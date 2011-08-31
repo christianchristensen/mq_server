@@ -1,15 +1,10 @@
 # AMQP Message Queue Server using RabbitMQ
 
 ## Quickstart:
-<code>
-[sudo] gem install librarian
-
-librarian-chef install
-
-git submodule init; git submodule update; git submodule sync;
-
-vagrant up
-</code>
+    [sudo] gem install librarian
+    librarian-chef install
+    git submodule init; git submodule update; git submodule sync;
+    vagrant up
 
 
 ## Technologies:
