@@ -1,0 +1,3 @@
+[submodule "srv/php-amqplib"]
+	path = srv/php-amqplib
+	url = https://github.com/tnc/php-amqplib.git
