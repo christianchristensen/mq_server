@@ -1,0 +1,34 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.1.2)
+    build-essential (1.0.0)
+    git (0.9.0)
+      runit (>= 0)
+    mysql (1.0.8)
+      openssl (>= 0.0.0)
+    openssl (1.0.0)
+    php (1.0.0)
+      build-essential (>= 0.0.0)
+      mysql (>= 0.0.0)
+      xml (>= 0.0.0)
+    rabbitmq (1.2.1)
+      apt (> 1.1)
+    runit (0.14.2)
+    xml (1.0.0)
+
+GIT
+  remote: https://github.com/christianchristensen/dev-env-helper_cookbook.git
+  ref: master
+  sha: 3533002a5677cf8eae549207f1c020b26c911411
+  specs:
+    dev-env-helper (0.0.1)
+      build-essential (>= 0.0.0)
+      git (>= 0.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  dev-env-helper (>= 0)
+  php (>= 0)
+  rabbitmq (>= 0)
+

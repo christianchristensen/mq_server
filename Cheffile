@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+cookbook 'apt'
+cookbook 'php'
+cookbook 'rabbitmq'
+
+# cookbook 'solo-helper', :git => 'https://github.com/glennpratt/solo-helper_cookbook.git'
+cookbook 'dev-env-helper', :git => 'https://github.com/christianchristensen/dev-env-helper_cookbook.git'
