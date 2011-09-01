@@ -3,8 +3,9 @@
 
 site 'http://community.opscode.com/api/v1'
 cookbook 'apt'
-cookbook 'php'
+cookbook 'php', :git => 'https://github.com/christianchristensen/php.git', :ref => 'master_amqp'
 cookbook 'rabbitmq'
+cookbook 'apache2'
 
 # cookbook 'solo-helper', :git => 'https://github.com/glennpratt/solo-helper_cookbook.git'
 cookbook 'dev-env-helper', :git => 'https://github.com/christianchristensen/dev-env-helper_cookbook.git'

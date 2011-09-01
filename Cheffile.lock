@@ -1,6 +1,7 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
+    apache2 (0.99.4)
     apt (1.1.2)
     build-essential (1.0.0)
     git (0.9.0)
@@ -8,10 +9,6 @@ SITE
     mysql (1.0.8)
       openssl (>= 0.0.0)
     openssl (1.0.0)
-    php (1.0.0)
-      build-essential (>= 0.0.0)
-      mysql (>= 0.0.0)
-      xml (>= 0.0.0)
     rabbitmq (1.2.1)
       apt (> 1.1)
     runit (0.14.2)
@@ -26,7 +23,18 @@ GIT
       build-essential (>= 0.0.0)
       git (>= 0.0.0)
 
+GIT
+  remote: https://github.com/christianchristensen/php.git
+  ref: master_amqp
+  sha: a2219836f852a1ab07570a606e0e50513666f403
+  specs:
+    php (1.0.0)
+      build-essential (>= 0.0.0)
+      mysql (>= 0.0.0)
+      xml (>= 0.0.0)
+
 DEPENDENCIES
+  apache2 (>= 0)
   apt (>= 0)
   dev-env-helper (>= 0)
   php (>= 0)
